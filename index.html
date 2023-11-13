@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD Operation</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container w-75 m-auto">
+          <h1 class="text-center my-4 fw-bold">CURD Operation</h1>
+            <label for="pn">product Name</label>
+            <input id="pn" type="text" class="form-control mb-4 mt-2" placeholder="product Name">
+      
+            <label for="pp">product Price</label>
+            <input id="pp" type="number" class="form-control mb-4" placeholder="product Price">
+      
+            <label for="pc">product Category</label>
+            <input id="pc" type="text" class="form-control mb-4" placeholder="product Category">
+      
+            <textarea id="pd" class="form-control mb-4" placeholder="product Description"></textarea>
+
+            <button id="addBtn"class="btn btn-info w-100">ADD</button> 
+            <!-- this btrg3le object -->
+            <input id="searchInput" onkeyup="search(this.value)" type="text" class="form-control my-4" placeholder="sreach">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="text-center">Index</th>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">price</th>
+                  <th class="text-center">Category</th>
+                  <th class="text-center">Description</th>
+                  <th class="text-center">Delete</th>
+                  <th class="text-center">Update</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <!-- new  product -->
+              </tbody>
+            </table>      
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
